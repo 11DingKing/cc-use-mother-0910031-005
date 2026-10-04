@@ -1,6 +1,16 @@
 [project]
 name = "domain-contract-0910031-005"
-version = "0.1.0"
-description = "车型年度积分核算的领域约定与校验工具"
+version = "0.2.0"
+description = "车型年度积分核算：版本化输入、可解释试算、确认冻结、调整单与监管追溯服务"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+credit-service = "credit_service.api:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
