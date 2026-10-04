@@ -1,6 +1,9 @@
 [project]
 name = "domain-contract-0910031-005"
 version = "0.1.0"
-description = "车型年度积分核算的领域约定与校验工具"
+description = "车型年度积分核算的领域约定、确定性核算引擎与服务端"
 requires-python = ">=3.11"
 dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

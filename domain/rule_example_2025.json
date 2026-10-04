@@ -1,0 +1,22 @@
+{
+  "engine": "1.0.0",
+  "applicable_year": 2025,
+  "description": "示例核算规则：阈值与权重均可随规则版本（含勘误）演进；引擎版本不变则算法不变。",
+  "bev": {
+    "range_threshold_km": 100,
+    "energy_ref_kwh": "15.0",
+    "energy_sensitivity": "0.5",
+    "factor_min": "0.8",
+    "factor_max": "1.5"
+  },
+  "phev": {
+    "range_threshold_km": 50,
+    "base_credit": "1.0"
+  },
+  "fcv": {
+    "unit_credit": "4.0"
+  },
+  "ice": {
+    "cafc_weight": "10.0"
+  }
+}
